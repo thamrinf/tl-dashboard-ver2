@@ -582,7 +582,7 @@ def create_interactive_map(map_df, map_metric):
     geo_json_safe = {"type": "FeatureCollection", "features": features}
 
     # 3. BUILD THE MAP
-    m = folium.Map(location=[-8.8, 125.70], zoom_start=8.5, tiles="cartodbpositron")
+    m = folium.Map(location=[-8.8, 125.70], zoom_start=8, tiles="cartodbpositron")
 
     folium.GeoJson(
         geo_json_safe,

@@ -441,7 +441,7 @@ def render_interactive_map(map_df, map_metric, map_key="default_map"):
     import branca.colormap as cm
 
     # 1. Initialize Map
-    m = folium.Map(location=[-8.85, 125.6], zoom_start=8, tiles="cartodbpositron")
+    m = folium.Map(location=[-8.85, 125.6], zoom_start=7.5, tiles="cartodbpositron")
 
     # 2. Define the Friendly Label for the Legend
     metric_label = "Budget (USD)" if map_metric == "Total_Budget" else "Activities"
